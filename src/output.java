@@ -1,6 +1,9 @@
 
 public class output {
 	private Employee emp ;
+	public output() {
+		
+	}
 	public output(Employee e) {
 		this.emp = e;
 	}
