@@ -16,8 +16,10 @@ public class Employee {
 			this.compen = this.price + ((5/100)*this.price );
 		}
 		else this.compen = this.price + ((5/100)*this.price );
+		if(this.compen < 20000) {
+			this.compen = 20000;
+		}
 		return this.compen;
-		
 	}
 	public String getName() {
 		return this.name;
