@@ -19,6 +19,12 @@ public class Employee {
 		if(this.compen < 20000) {
 			this.compen = 20000;
 		}
+		if(this.price < 15000)
+		{
+			if(this.priceMonth > 100001) {
+				this.compen += 5000;
+			}
+		}
 		return this.compen;
 	}
 	public String getName() {
