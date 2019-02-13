@@ -15,7 +15,7 @@ public class Employee {
 		if( this.priceMonth >0 || this.priceMonth <= 100000) {
 			this.compen = this.price + ((5/100)*this.price );
 		}
-		else this.compen = this.price + ((5/100)*this.price );
+		else this.compen = this.price + ((10/100)*this.price );
 		return this.compen;
 		
 	}
