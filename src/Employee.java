@@ -12,10 +12,10 @@ public class Employee {
 		this.name = n;
 	}
 	public double getCompensation() {
-		if( this.priceMonth >0 || this.priceMonth <= 100000) {
-			this.compen = this.price + ((5/100)*this.price );
+		if( this.priceMonth <= 100000) {
+			this.compen = this.price + ((5/100)*this.priceMonth  );
 		}
-		else this.compen = this.price + ((10/100)*this.price );
+		else this.compen = this.price + ((10/100)*this.priceMonth  );
 		return this.compen;
 		
 	}
